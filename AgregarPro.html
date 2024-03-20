@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agregar Productos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #E1C7E0;
+        }
+        /* .form-container {
+            border: 1px solid #ccc;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 400px; */
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            border: 1px solid #73459B;
+            padding: 8px;
+            text-align: left;
+            color: white;
+        }
+        th {
+            background-color: #73459B;
+        }
+        img {
+            float: left;
+            margin-right: 20px;
+        }
+        h2 {
+            margin-top: 0;
+        }
+        button {
+            width: 10%;
+            padding: 10px;
+            background-color: #9866AB;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 16px;
+            display: block;
+            margin: 0 auto; /* Centra horizontalmente el botón */
+        }
+        button:hover {
+            background-color: #9866AB;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h2 style="text-align: center;">AGREGAR PRODUCTOS</h2>
+        <div style="text-align: center;">
+            <img src="ProyectoAgr.png" alt="Imagen de producto">
+        </div>                
+        <table>
+            <tr>
+                <th>Id</th>
+                <th>Precio</th>
+                <th>Talla</th>
+                <th>Modelo</th>
+                <th>Descripción</th>
+                <th>Defectos</th>
+            </tr>
+            <tr>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+            </tr>
+        </table>
+        <br>
+        <button type="button">Agregar</button>
+    </div>
+</body>
+</html>
