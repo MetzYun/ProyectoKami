@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reseñas y Comentarios</title>
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #F2F2F2; /* Color de fondo */
+            color: #333; /* Color del texto */
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+            color: #000; /* Color del título */
+        }
+        /* Estilos para las reseñas */
+        .review {
+            border: 1px solid #AB81C8; /* Color del borde - Morado claro */
+            border-radius: 5px;
+            padding: 20px;
+            margin: 20px auto;
+            background-color: #FFF; /* Color de fondo */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra */
+            max-width: 600px;
+        }
+        .review .author {
+            font-weight: bold;
+            color: #333; /* Color del autor */
+        }
+        .review .date {
+            font-style: italic;
+            color: #666; /* Color de la fecha */
+        }
+        .review .content {
+            margin-top: 10px;
+            color: #444; /* Color del contenido */
+        }
+        /* Estilos para las estrellas */
+        .stars {
+            display: inline-block;
+            font-size: 25px;
+            color: #FFD700; /* Color de las estrellas */
+        }
+        .stars input[type="radio"] {
+            display: none;
+        }
+        .stars label {
+            cursor: pointer;
+        }
+        .stars label:before {
+            content: '\2605'; /* Estrella rellena (unicode) */
+        }
+        .stars input[type="radio"]:checked ~ label:before {
+            content: '\2605'; /* Estrella rellena cuando se selecciona */
+        }
+    </style>
+</head>
+<body>
+    <h1>Reseñas y Comentarios</h1>
+
+    <!-- Ejemplo de una reseña con clasificación de estrellas -->
+    <div class="review">
+        <div class="author">Juan Pérez</div>
+        <div class="date">10 de marzo de 2024</div>
+        <div class="stars">
+            <input type="radio" id="star5" name="rating" value="5">
+            <label for="star5"></label>
+            <input type="radio" id="star4" name="rating" value="4">
+            <label for="star4"></label>
+            <input type="radio" id="star3" name="rating" value="3">
+            <label for="star3"></label>
+            <input type="radio" id="star2" name="rating" value="2">
+            <label for="star2"></label>
+            <input type="radio" id="star1" name="rating" value="1">
+            <label for="star1"></label>
+        </div>
+        <div class="content">
+            <p>¡Excelente producto! Estoy muy satisfecho con mi compra. Funciona perfectamente y llegó en tiempo récord.</p>
+        </div>
+    </div>
+
+    <!-- Ejemplo de otra reseña con clasificación de estrellas -->
+    <div class="review">
+        <div class="author">María González</div>
+        <div class="date">15 de marzo de 2024</div>
+        <div class="stars">
+            <input type="radio" id="star10" name="rating2" value="5">
+            <label for="star10"></label>
+            <input type="radio" id="star9" name="rating2" value="4">
+            <label for="star9"></label>
+            <input type="radio" id="star8" name="rating2" value="3">
+            <label for="star8"></label>
+            <input type="radio" id="star7" name="rating2" value="2">
+            <label for="star7"></label>
+            <input type="radio" id="star6" name="rating2" value="1">
+            <label for="star6"></label>
+        </div>
+        <div class="content">
+            <p>No estoy tan contenta con el producto. Tuve algunos problemas con la entrega y además no cumplió con todas mis expectativas.</p>
+        </div>
+    </div>
+
+    <!-- Puedes agregar más reseñas con clasificación de estrellas según sea necesario -->
+
+</body>
+</html>
