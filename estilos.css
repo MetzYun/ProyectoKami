@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Grandiflora+One&family=Montserrat+Alternates:ital,wght@0,400;0,600;1,400;1,600&display=swap');
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	background: #e7d0e6;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+
+.contenedor {
+	max-width: 90%;
+	width: 400px;
+	margin: 80px auto;
+}
+
+.formulario input[type='text'] {
+	padding: 15px;
+	border: none;
+	background: #fff;
+	width: 100%;
+	border-radius: 5px;
+	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+	font-size: 15px;
+	margin-bottom: 20px;
+	font-family: "Grandiflora One", cursive;
+    color: #9f64a6;
+}
+
+.formulario .btn {
+	width: 100%;
+	border: none;
+	background: rgb(120, 61, 144);
+	color: #fff;
+	cursor: pointer;
+	padding: 20px;
+	font-size: 20px;
+	border-radius: 5px;
+	font-family: "Montserrat Alternates", sans-serif;
+}
+
+.formulario .btn:hover {
+	background: #9f64a6;
+}
+
+.contenedorQR {
+	display: flex;
+	justify-content: center;
+	padding: 40px 0;
+}
