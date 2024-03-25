@@ -44,9 +44,32 @@ body {
 .formulario .btn:hover {
 	background: #9f64a6;
 }
+.btn {
+	width: 100%;
+	border: none;
+	background: rgb(120, 61, 144);
+	color: #fff;
+	cursor: pointer;
+	padding: 20px;
+	font-size: 20px;
+	border-radius: 5px;
+	font-family: "Montserrat Alternates", sans-serif;
+}
 
+.btn:hover {
+	background: #9f64a6;
+}
 .contenedorQR {
 	display: flex;
 	justify-content: center;
 	padding: 40px 0;
+}
+.titulo{
+	font-family: "Montserrat Alternates", sans-serif;
+}
+#video {
+	width: 100%;
+}
+#info {
+	display: none;
 }
