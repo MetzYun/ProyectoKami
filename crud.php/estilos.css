@@ -1,0 +1,23 @@
+.color-de-fondo {
+    background-color: #F3ECDA; /* Puedes cambiar el valor a cualquier color hexadecimal, RGB, o nombre de color */
+}
+.color-de-tabla {
+    background-color: #E1C7E0; /* Puedes cambiar el valor a cualquier color hexadecimal, RGB, o nombre de color */
+}
+.color-de-fondo {
+    background-color: #F3ECDA; /* Puedes cambiar el valor a cualquier color hexadecimal, RGB, o nombre de color */
+}
+
+.btnColor {
+    background-color: #9866AB; /* Color de fondo del botón */
+    color: white; /* Color del texto del botón */
+    padding: 15px 32px; /* Tamaño del botón */
+    text-align: center; /* Alineación del texto */
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 10px; /* Borde redondeado */
+}
+
