@@ -1,0 +1,55 @@
+<?php
+
+namespace App\Http\Controllers;
+use App\Models\productos;
+use Cart;
+
+use Illuminate\Http\Request;
+
+class CartController extends Controller
+{
+    public function add(Request $request){
+        $productos = productos::find($request->id);
+        if(empty($productos))
+            return redirect('/');
+            Cart::add(
+                [
+                    'id' => $productos->id,
+                    'name' => $productos->descripcion,
+                    'qty' => 1,
+                    'price' => $productos->precio,
+                    'weight' => 0, // Puedes establecer esto como 0 o cualquier otro valor predeterminado
+                    'options' => [
+                    'image' => $productos->imagen
+                    ]
+                ]
+            );
+        return redirect()->back()->with("success", "Item agregado: ". $productos->descripcion);
+    }
+
+    public function checkout(){
+        return view('checkout');
+    }
+
+    public function removeItem(Request $request){
+        Cart::remove($request->rowId);
+        return redirect()->back()->with("success", "Item eliminado!");
+    }
+
+    public function clear(){
+        Cart::destroy();
+        return redirect()->back()->with("success", "Carrito vacio!");
+    }
+
+    public function increaseQuantity(Request $request){
+       $item = Cart::get($request->rowId);
+       $qty = $item->qty + 1;
+       Cart::update($request->rowId, $qty);
+    }
+
+    public function decreaseQuantity(Request $request){
+        $item = Cart::get($request->rowId);
+        $qty = $item->qty - 1;
+        Cart::update($request->rowId, $qty);
+     }
+}
